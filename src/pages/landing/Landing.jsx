@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import SocialIcons from "../../components/SocialIcons";
+import { useState, useEffect } from "react";
+import resume from "../about/Gulam_Mustafa_Resume.pdf";
 
 const Landing = () => {
   const styles = {
@@ -9,7 +11,7 @@ const Landing = () => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      marginTop: "6.5rem",
+      marginTop: "6.2rem",
     },
 
     landingImage: {
@@ -36,12 +38,49 @@ const Landing = () => {
       marginTop: "-100px",
       paddingBottom: "28px",
     },
+    resume_button: {
+      width: "fit-content",
+      margin: "auto",
+      background: "#009e66",
+      color: "#f9f9f9",
+      marginTop: "40px",
+      padding: "12px var(--sm-spacing)",
+      border: "none",
+      borderRadius: "20px",
+      cursor: "pointer",
+    },
+    greetings: {
+      fontSize: "20px",
+      fontWeight: "400",
+      color: "#009e66",
+    },
   };
 
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true,
   });
+
+  const [downloading, setDownloading] = useState(false);
+
+  useEffect(() => {
+    setDownloading(false);
+  }, [downloading]);
+
+  const handleDownload = () => {
+    setDownloading(true);
+    const link = document.createElement("a");
+    link.href = resume;
+    link.download = "Gulam_Mustafa_Resume.pdf";
+    window.open(`${link.href}`);
+    link.onload = () => {
+      link.remove();
+      setDownloading(false);
+    };
+    document.body.appendChild(link);
+    document.title = "Gulam_Mustafa_Resume.pdf";
+    link.click();
+  };
 
   return (
     <>
@@ -55,7 +94,10 @@ const Landing = () => {
             animate={inView ? { y: 0, opacity: 1 } : { y: "-10vw", opacity: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
           >
-            Gulam Mustafa
+            <motion.span className="greetings" style={styles.greetings}>
+              Hi, My name is...
+            </motion.span>{" "}
+            <br /> Gulam Mustafa
           </motion.h1>
           <motion.p
             className="description"
@@ -66,6 +108,17 @@ const Landing = () => {
           >
             Full Stack Web Developer
           </motion.p>
+          <motion.button
+            className="resume-button"
+            style={styles.resume_button}
+            ref={ref}
+            initial={{ y: "20vw", opacity: 0 }}
+            animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            onClick={handleDownload}
+          >
+            View Resume
+          </motion.button>
         </div>
         <SocialIcons />
       </section>
