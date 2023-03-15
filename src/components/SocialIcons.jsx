@@ -14,6 +14,7 @@ const SocialIcons = () => {
         className="icon"
         style={styles.icon}
         href="https://github.com/gulam160"
+        target="_blank"
       >
         <i
           className="fa-brands fa-github"
@@ -25,6 +26,7 @@ const SocialIcons = () => {
         className="icon"
         style={styles.icon}
         href="https://www.linkedin.com/in/g-mustafa-s/"
+        target="_blank"
       >
         <i
           className="fa-brands fa-linkedin"
@@ -36,6 +38,7 @@ const SocialIcons = () => {
         className="icon"
         style={styles.icon}
         href="https://api.whatsapp.com/send?phone=919555616014"
+        target="_blank"
       >
         <i
           className="fab fa-whatsapp"
@@ -47,6 +50,7 @@ const SocialIcons = () => {
         className="icon"
         style={styles.icon}
         href="https://twitter.com/gulam158"
+        target="_blank"
       >
         <i
           className="fa-brands fa-twitter"
