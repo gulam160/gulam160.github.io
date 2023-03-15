@@ -1,0 +1,42 @@
+[
+    {
+        "title": "ShopKaro - Limeroad clone",
+        "image": "https://i.ibb.co/Jq0ZQqc/shopkaro-image.png",
+        "description": "Shop Karo is an e-commerce platform that provides a wide range of fashion and lifestyle products to its customers. It was founded in 2023 and has grown to become one of the leading online shopping destinations in India.",
+        "technologies": "React | Redux | TypeScript | Chakra UI | CSS",
+        "github": "https://github.com/uzairshaikh123/shopkaro-clone",
+        "deployed": "https://shopkaro.vercel.app/",
+        "bgcolor": "#f37737",
+        "id": "1"
+    },
+    {
+        "title": "Sugar Cosmetics Clone",
+        "image": "https://i.ibb.co/2kfqLsb/Sugar-cosmetics.png",
+        "technologies": "JavaScript | HTML | CSS | JSON Server",
+        "description": "Sugar Cosmetic is an e-commerce website that sells cosmetics products. A collaborative project built by a team of 5 members and executed in 5 days",
+        "github": "https://github.com/pranali412/bustling-wheel-1520",
+        "deployed": "https://steady-empanada-83da41.netlify.app/",
+        "bgcolor": "#29cbe0",
+        "id": "2"
+    },
+    {
+        "title": "OLX Clone",
+        "image": "https://i.ibb.co/0Dfrd3c/Olx-clone.png",
+        "technologies": "JS | HTML | CSS | JSON Server",
+        "description": "An E-Commerce web application that ease the way for people to sell or buy their old products.",
+        "github": "https://github.com/gulam160/beneficial-spiders-5753",
+        "deployed": "https://transcendent-sable-57a31a.netlify.app/",
+        "bgcolor": "#6c4bf4",
+        "id": "3"
+    },
+    {
+        "title": "Skinnco - Nykaa clone",
+        "image": "https://i.ibb.co/gP31JjT/Sninnco-app.png",
+        "technologies": "React | JavaScript | Chakra UI | CSS",
+        "description": "A web app on the built on the fundamentals of React which sells wide range of beauty and personal care products to womens",
+        "github": "https://github.com/gulam160/rude-quartz-7619",
+        "deployed": "https://skinnco-by-gulam160.netlify.app/",
+        "bgcolor": "#f85781",
+        "id": "4"
+    }
+]
