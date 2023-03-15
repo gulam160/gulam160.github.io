@@ -31,8 +31,8 @@ const AboutMe = ({ name, email, brand }) => {
           <h4>Nice to meet you</h4>
           <h5>
             I am a result-oriented MERN Stack Developer and always ardent about
-            developing and useful and amazing web applications. I have a strong
-            foundation in both front- end and back-end technologies and have
+            developing useful and amazing web applications. I have a strong
+            foundation in both front-end and back-end technologies and have
             strong problem-solving skills.
           </h5>
           <div className="contentDescription">
