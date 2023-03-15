@@ -16,8 +16,7 @@ const ContactInfo = ({ name, email, location }) => {
     >
       <h4 className="contentTitle">Contact Information</h4>
       <p className="infoDescription">
-        Open for opportunities. Let's connect and build something awesome
-        together!{" "}
+        Let's connect and build something awesome together!{" "}
       </p>
       <ul className="listInfo">
         <li>

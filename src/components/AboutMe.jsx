@@ -29,7 +29,12 @@ const AboutMe = ({ name, email, brand }) => {
         <img src={aboutMeImg} alt={name} />
         <div className="contentContainer">
           <h4>Nice to meet you</h4>
-          <h5>I am Full Stack Web and I create amazing web applications!</h5>
+          <h5>
+            I am a result-oriented MERN Stack Developer and always ardent about
+            developing and useful and amazing web applications. I have a strong
+            foundation in both front- end and back-end technologies and have
+            strong problem-solving skills.
+          </h5>
           <div className="contentDescription">
             <p>{brand}</p>
           </div>
