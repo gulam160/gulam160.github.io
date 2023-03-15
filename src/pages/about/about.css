@@ -152,8 +152,6 @@
     flex-direction: column;
   }
   .aboutContainer > .row > img {
-    padding: unset;
-    border: unset;
     height: 250px;
     border-radius: 50%;
   }

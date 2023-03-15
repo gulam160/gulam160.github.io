@@ -46,7 +46,9 @@ const AboutMe = ({ name, email, brand }) => {
               <div className="col-12 col-md-6 info">
                 <span>Email:</span>
                 <p>
-                  <a href={`mailto:${email}`}>gulam.mu159@gmail.com</a>
+                  <a href={`mailto:gulam.mu159@gmail.com`}>
+                    gulam.mu159@gmail.com
+                  </a>
                 </p>
               </div>
             </div>
