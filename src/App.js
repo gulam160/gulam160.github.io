@@ -1,20 +1,32 @@
 import Header from "./components/Header";
-import AnimatedRoutes from "./components/AnimatedRoutes";
+import Landing from "./pages/landing/Landing";
+import About from "./pages/about/About";
+import MySkills from "./pages/skills/Skills";
+import Portfolio from "./pages/portfolio/Portfolio";
+import Contact from "./pages/contact/Contact";
+import "./OneApp.css";
 
 function App() {
-  const personalDetails = {
-    name: "Gulam Mustafa",
-    location: "Mumbai, Maharastra",
-    tagline: "Full Stack Web Developer",
-    email: "gulam.mu159@gmail.com",
-    brand:
-      "An Enthusiastic and highly motivated full stack web developer with a strong foundation to write web applications using both frontend and back-end technologies. Strong problem-solving skill, ability to learn quickly and ability to work in a team. looking for the job opportunities in tech driven organizations.",
-  };
-
   return (
     <>
-      <Header />
-      <AnimatedRoutes personalDetails={personalDetails} />
+      <div
+        style={{
+          // border: "1px solid white",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100%",
+          background: "#101010",
+          zIndex: "999",
+        }}
+      >
+        <Header />
+      </div>
+      <Landing />
+      <About />
+      <MySkills />
+      <Portfolio />
+      <Contact />
     </>
   );
 }

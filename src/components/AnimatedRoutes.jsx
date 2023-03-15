@@ -1,18 +1,19 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+// import { Routes, Route, useLocation } from "react-router-dom";
 
-import Landing from "../pages/landing/Landing";
-import About from "../pages/about/About";
-import Portfolio from "../pages/portfolio/Portfolio";
-import Contact from "../pages/contact/Contact";
-import ThanksforDowloading from "./Thanks";
-import MySkills from "../pages/skills/Skills";
+// import Landing from "../pages/landing/Landing";
+// import About from "../pages/about/About";
+// import Portfolio from "../pages/portfolio/Portfolio";
+// import Contact from "../pages/contact/Contact";
+// import ThanksforDowloading from "./Thanks";
+// import MySkills from "../pages/skills/Skills";
 
-const AnimatedRoutes = ({ personalDetails }) => {
-  const location = useLocation();
+// const AnimatedRoutes = ({ personalDetails }) => {
+//   const location = useLocation();
 
-  return (
-    <Routes location={location} key={location.pathname}>
-      <Route
+//   return (
+// <Routes location={location} key={location.pathname}>
+// {
+/* <Route
         path="/"
         element={
           <Landing
@@ -20,8 +21,10 @@ const AnimatedRoutes = ({ personalDetails }) => {
             tagline={personalDetails.tagline}
           />
         }
-      />
-      <Route
+      /> */
+// }
+// {
+/* <Route
         path="/about"
         element={
           <About
@@ -32,8 +35,10 @@ const AnimatedRoutes = ({ personalDetails }) => {
             brand={personalDetails.brand}
           />
         }
-      />
-      <Route path="/skills" element={<MySkills />} />
+      /> */
+// }
+// {
+/* <Route path="/skills" element={<MySkills />} />
       <Route path="/projects" element={<Portfolio />} />
       <Route
         path="/contact"
@@ -44,10 +49,13 @@ const AnimatedRoutes = ({ personalDetails }) => {
             email={personalDetails.email}
           />
         }
-      />
-      <Route path="/downloaded" element={<ThanksforDowloading />} />
-    </Routes>
-  );
-};
+      /> */
+// }
+// {
+/* <Route path="/downloaded" element={<ThanksforDowloading />} /> */
+// }
+// </Routes>
+//   );
+// };
 
-export default AnimatedRoutes;
+// export default AnimatedRoutes;

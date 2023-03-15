@@ -74,7 +74,7 @@ function MyGitHubCalendar() {
 
 const MySkills = () => {
   return (
-    <div className="about">
+    <div className="about" id="skills">
       <PageHeader title="Skills" description="My technical expertise" />
       <div className="myskill-card">
         {images &&

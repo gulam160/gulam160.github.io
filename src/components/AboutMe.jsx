@@ -1,16 +1,9 @@
 import aboutMeImg from "../images/aboutme.jpeg";
-import { motion } from "framer-motion";
 import SocialIcons from "../components/SocialIcons";
-import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
 import resume from "../pages/about/Gulam_Mustafa_Resume.pdf";
 
-const AboutMe = ({ name, email, location, brand }) => {
-  const [ref, inView] = useInView({
-    threshold: 0.2,
-    triggerOnce: true,
-  });
-
+const AboutMe = ({ name, email, brand }) => {
   const [downloading, setDownloading] = useState(false);
 
   useEffect(() => {

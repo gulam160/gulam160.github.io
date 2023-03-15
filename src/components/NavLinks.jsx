@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 import openMenu from "../images/open.svg";
 import closeMenu from "../images/close.svg";
@@ -39,22 +39,22 @@ const NavLinks = () => {
         )}
       </button>
       <nav className={`links ${isMenuOpen ? "open" : "closed"}`}>
-        <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
+        <Link to="#home" onClick={() => setIsMenuOpen(false)}>
           Home
-        </NavLink>
-        <NavLink to="/about" onClick={() => setIsMenuOpen(false)}>
+        </Link>
+        <Link to="#about" smooth onClick={() => setIsMenuOpen(false)}>
           About
-        </NavLink>
-        <NavLink to="/skills" onClick={() => setIsMenuOpen(false)}>
+        </Link>
+        <Link to="#skills" smooth onClick={() => setIsMenuOpen(false)}>
           Skills
-        </NavLink>
-        <NavLink to="/projects" onClick={() => setIsMenuOpen(false)}>
+        </Link>
+        <Link to="#projects" smooth onClick={() => setIsMenuOpen(false)}>
           Projects
-        </NavLink>
-        <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
+        </Link>
+        <Link to="#contact" smooth onClick={() => setIsMenuOpen(false)}>
           Contact
-        </NavLink>
-        <Link to="/downloaded" onClick={handleDownload}>
+        </Link>
+        <Link to="#home" smooth target="_blank" onClick={handleDownload}>
           {downloading ? "Downloading..." : "Resume"}
         </Link>
       </nav>
