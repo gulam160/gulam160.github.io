@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef402726.css",
-    "main.js": "/static/js/main.72d3e5d0.js",
+    "main.css": "/static/css/main.8e0428da.css",
+    "main.js": "/static/js/main.8af2b474.js",
     "static/media/Gulam_Mustafa_Resume.pdf": "/static/media/Gulam_Mustafa_Resume.5b2c8eae585a47a565c3.pdf",
     "static/media/aboutme.jpeg": "/static/media/aboutme.078aee0109064771cb33.jpeg",
     "static/media/logosvg.svg": "/static/media/logosvg.768e943728e3b5135af50bfaf771e2a7.svg",
     "index.html": "/index.html",
     "static/media/close.svg": "/static/media/close.a591c5268e7cbcfeb569c6afea5745fc.svg",
     "static/media/open.svg": "/static/media/open.e6bd41ec79183186fdb132e92b58c1de.svg",
-    "main.ef402726.css.map": "/static/css/main.ef402726.css.map",
-    "main.72d3e5d0.js.map": "/static/js/main.72d3e5d0.js.map"
+    "main.8e0428da.css.map": "/static/css/main.8e0428da.css.map",
+    "main.8af2b474.js.map": "/static/js/main.8af2b474.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef402726.css",
-    "static/js/main.72d3e5d0.js"
+    "static/css/main.8e0428da.css",
+    "static/js/main.8af2b474.js"
   ]
 }
