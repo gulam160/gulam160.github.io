@@ -15,6 +15,7 @@ const AboutMe = ({ name, email, brand }) => {
     const link = document.createElement("a");
     link.href = resume;
     link.download = "Gulam_Mustafa_Resume.pdf";
+    window.open(`${link.href}`);
     link.onload = () => {
       link.remove();
       setDownloading(false);
