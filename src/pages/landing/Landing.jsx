@@ -102,7 +102,6 @@ const Landing = () => {
           </motion.h1>
           <motion.p
             className="description"
-            id="user-detail-intro"
             ref={ref}
             initial={{ y: "10vw", opacity: 0 }}
             animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
@@ -112,6 +111,7 @@ const Landing = () => {
           </motion.p>
           <motion.button
             className="resume-button"
+            id="resume-button-2"
             style={styles.resume_button}
             ref={ref}
             initial={{ y: "20vw", opacity: 0 }}

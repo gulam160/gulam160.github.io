@@ -30,11 +30,11 @@ const AboutMe = ({ name, email, brand }) => {
         <img class="home-img" src={aboutMeImg} alt={name} />
         <div className="contentContainer">
           <h4>Nice to meet you</h4>
-          <h5>
+          <h5 id="user-detail-intro">
             I am a result-oriented MERN Stack Developer and always ardent about
             developing useful and amazing web applications. I have a strong
-            foundation in both front-end and back-end technologies and have
-            strong problem-solving skills.
+            foundation in both Frontend and Backend technologies and have strong
+            problem-solving skills.
           </h5>
           <div className="contentDescription">
             <p>{brand}</p>
@@ -68,6 +68,7 @@ const AboutMe = ({ name, email, brand }) => {
           <div className="buttonContainer">
             <button
               className="btn downloadCV"
+              id="resume-button-2"
               onClick={handleDownload}
               disabled={downloading}
             >

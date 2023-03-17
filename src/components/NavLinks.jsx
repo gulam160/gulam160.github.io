@@ -43,7 +43,7 @@ const NavLinks = () => {
         <Link
           to="#home"
           smooth
-          class="nav-link home"
+          className="nav-link home"
           onClick={() => setIsMenuOpen(false)}
         >
           Home
@@ -51,7 +51,7 @@ const NavLinks = () => {
         <Link
           to="#about"
           smooth
-          class="nav-link about"
+          className="nav-link about"
           onClick={() => setIsMenuOpen(false)}
         >
           About
@@ -67,7 +67,7 @@ const NavLinks = () => {
         <Link
           to="#projects"
           smooth
-          class="nav-link projects"
+          className="nav-link projects"
           onClick={() => setIsMenuOpen(false)}
         >
           Projects
@@ -75,7 +75,7 @@ const NavLinks = () => {
         <Link
           to="#contact"
           smooth
-          class="nav-link contact"
+          className="nav-link contact"
           onClick={() => setIsMenuOpen(false)}
         >
           Contact
@@ -84,7 +84,8 @@ const NavLinks = () => {
           to="#home"
           smooth
           target="_blank"
-          class="nav-link resume"
+          className="nav-link resume"
+          id="resume-link-1"
           onClick={handleDownload}
         >
           {downloading ? "Downloading..." : "Resume"}

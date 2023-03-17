@@ -8,19 +8,19 @@ import "./skills.css";
 const images = [
   {
     logo: "https://cdn-icons-png.flaticon.com/128/174/174854.png",
-    name: "HTML5",
+    name: "HTML",
   },
   {
     logo: "https://cdn-icons-png.flaticon.com/128/732/732190.png",
-    name: "css3",
+    name: "CSS",
   },
   {
     logo: "https://cdn-icons-png.flaticon.com/128/5968/5968292.png",
-    name: "JS",
+    name: "JavaScript",
   },
   {
     logo: "https://cdn-icons-png.flaticon.com/128/5968/5968381.png",
-    name: "TS",
+    name: "TypeScript",
   },
   {
     logo: "https://cdn-icons-png.flaticon.com/128/760/760457.png",
@@ -32,7 +32,7 @@ const images = [
   },
   {
     logo: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_1080,q_100,w_1080/v1/gcs/platform-data-dsc/events/nextjs-boilerplate-logo.png",
-    name: "Next",
+    name: "Next.js",
   },
   {
     logo: "https://t3.ftcdn.net/jpg/03/52/67/82/240_F_352678266_NFcwIwhhY76mkQItT4lCxyxcCTP3LgvY.jpg",
@@ -40,27 +40,27 @@ const images = [
   },
   {
     logo: "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
-    name: "Express",
+    name: "Express.js",
   },
   {
     logo: "https://www.svgrepo.com/show/331488/mongodb.svg",
-    name: "Mongo",
+    name: "MongoDB",
   },
   {
     logo: "https://www.happylifecreators.com/wp/wp-content/uploads/2022/06/chakra-ui_title2-768x431.png",
-    name: "ChakarUI",
+    name: "Chakra UI",
   },
   {
     logo: "https://i.pinimg.com/originals/01/e5/00/01e500fca29c045d432b64f285f9c229.png",
-    name: "git",
+    name: "Git",
   },
   {
     logo: "https://t4.ftcdn.net/jpg/02/50/30/59/240_F_250305943_sDC6la1N1fDl3bLgfLxOkQwItIodsdMb.jpg",
-    name: "Github",
+    name: "GitHub",
   },
   {
     logo: "https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8",
-    name: "PostMan",
+    name: "Postman",
   },
 ];
 
