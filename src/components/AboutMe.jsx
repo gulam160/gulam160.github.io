@@ -27,7 +27,7 @@ const AboutMe = ({ name, email, brand }) => {
   return (
     <div className="aboutContainer container">
       <div className="row">
-        <img src={aboutMeImg} alt={name} />
+        <img class="home-img" src={aboutMeImg} alt={name} />
         <div className="contentContainer">
           <h4>Nice to meet you</h4>
           <h5>
@@ -47,12 +47,12 @@ const AboutMe = ({ name, email, brand }) => {
               </div>
               <div className="col-12 col-md-6 info">
                 <span>Phone:</span>
-                <p>+91 9555616014</p>
+                <p id="contact-phone">+91 9555616014</p>
               </div>
               <div className="col-12 col-md-6 info">
                 <span>Email:</span>
                 <p>
-                  <a href={`mailto:gulam.mu159@gmail.com`}>
+                  <a id="contact-email" href={`mailto:gulam.mu159@gmail.com`}>
                     gulam.mu159@gmail.com
                   </a>
                 </p>

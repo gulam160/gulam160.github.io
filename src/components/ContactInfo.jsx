@@ -48,7 +48,9 @@ const ContactInfo = ({ name, email, location }) => {
             </span>
             <div className="mediaWrap">
               <h6 className="infoType">Phone</h6>
-              <span className="infoValue">+91 9555616014</span>
+              <span className="infoValue" id="contact-phone">
+                +91 9555616014
+              </span>
             </div>
           </div>
         </li>
@@ -60,7 +62,7 @@ const ContactInfo = ({ name, email, location }) => {
             <div className="mediaWrap">
               <h6 className="infoType">Email</h6>
               <span className="infoValue">
-                <a href={`mailto:gulam.mu159@gmail.com`}>
+                <a id="contact-email" href={`mailto:gulam.mu159@gmail.com`}>
                   gulam.mu159@gmail.com
                 </a>
               </span>

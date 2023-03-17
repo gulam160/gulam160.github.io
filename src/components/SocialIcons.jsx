@@ -12,6 +12,7 @@ const SocialIcons = () => {
     <div className="socialIcons" style={styles.socialIcons}>
       <a
         className="icon"
+        id="contact-github"
         style={styles.icon}
         href="https://github.com/gulam160"
         rel="noreferrer"
@@ -25,6 +26,7 @@ const SocialIcons = () => {
       </a>
       <a
         className="icon"
+        id="contact-linkedin"
         style={styles.icon}
         href="https://www.linkedin.com/in/g-mustafa-s/"
         rel="noreferrer"

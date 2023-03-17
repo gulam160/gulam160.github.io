@@ -88,6 +88,7 @@ const Landing = () => {
         <div className="textContainer" style={styles.textContainer}>
           <motion.h1
             className="name"
+            id="user-detail-name"
             style={styles.name}
             ref={ref}
             initial={{ y: "-10vw", opacity: 0 }}
@@ -101,6 +102,7 @@ const Landing = () => {
           </motion.h1>
           <motion.p
             className="description"
+            id="user-detail-intro"
             ref={ref}
             initial={{ y: "10vw", opacity: 0 }}
             animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
