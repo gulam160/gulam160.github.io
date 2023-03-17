@@ -40,22 +40,53 @@ const NavLinks = () => {
         )}
       </button>
       <nav className={`links ${isMenuOpen ? "open" : "closed"}`}>
-        <Link to="#home" onClick={() => setIsMenuOpen(false)}>
+        <Link
+          to="#home"
+          smooth
+          class="nav-link home"
+          onClick={() => setIsMenuOpen(false)}
+        >
           Home
         </Link>
-        <Link to="#about" smooth onClick={() => setIsMenuOpen(false)}>
+        <Link
+          to="#about"
+          smooth
+          class="nav-link about"
+          onClick={() => setIsMenuOpen(false)}
+        >
           About
         </Link>
-        <Link to="#skills" smooth onClick={() => setIsMenuOpen(false)}>
+        <Link
+          to="#skills"
+          smooth
+          class="nav-link skills"
+          onClick={() => setIsMenuOpen(false)}
+        >
           Skills
         </Link>
-        <Link to="#projects" smooth onClick={() => setIsMenuOpen(false)}>
+        <Link
+          to="#projects"
+          smooth
+          class="nav-link projects"
+          onClick={() => setIsMenuOpen(false)}
+        >
           Projects
         </Link>
-        <Link to="#contact" smooth onClick={() => setIsMenuOpen(false)}>
+        <Link
+          to="#contact"
+          smooth
+          class="nav-link contact"
+          onClick={() => setIsMenuOpen(false)}
+        >
           Contact
         </Link>
-        <Link to="#home" smooth target="_blank" onClick={handleDownload}>
+        <Link
+          to="#home"
+          smooth
+          target="_blank"
+          class="nav-link resume"
+          onClick={handleDownload}
+        >
           {downloading ? "Downloading..." : "Resume"}
         </Link>
       </nav>
