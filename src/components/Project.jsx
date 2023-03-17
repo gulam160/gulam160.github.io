@@ -83,7 +83,7 @@ const Project = ({
           alt="Close"
         ></img>
         <h3 className="modalTitle project-title">{title}</h3>
-        <p className="projectDescription project-description">{description}</p>
+        <p className="project-description projectDescription">{description}</p>
         <button
           className="btn project-github-link"
           onClick={() => window.open(`${github}`, "_blank")}

@@ -122,8 +122,8 @@ const MySkills = () => {
         </div>
       </div>
 
-      <div className="calender">
-        <MyGitHubCalendar />
+      <div className="calender react-activity-calendar">
+        <MyGitHubCalendar className="react-activity-calendar" />
       </div>
     </div>
   );
