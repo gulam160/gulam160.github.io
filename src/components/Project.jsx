@@ -33,7 +33,7 @@ const Project = ({
   return (
     <motion.div
       ref={ref}
-      className="col-sm-12 col-lg-6"
+      className="col-sm-12 col-lg-6 project-card"
       variants={variants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
@@ -45,10 +45,10 @@ const Project = ({
         onClick={handleOpenModal}
       >
         <div className="textWrap col-6 d-flex flex-column justify-content-center align-items-center m-5">
-          <p className="tech">
+          <p className="tech project-tech-stack">
             <em>{technologies}</em>
           </p>
-          <h3 className="projectTitle">{title}</h3>
+          <h3 className="projectTitle project-title">{title}</h3>
           <span className="viewWork">View Work &#8594;</span>
         </div>
         <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
@@ -82,16 +82,16 @@ const Project = ({
           onClick={handleCloseModal}
           alt="Close"
         ></img>
-        <h3 className="modalTitle">{title}</h3>
-        <p className="projectDescription">{description}</p>
+        <h3 className="modalTitle project-title">{title}</h3>
+        <p className="projectDescription project-description">{description}</p>
         <button
-          className="btn"
+          className="btn project-github-link"
           onClick={() => window.open(`${github}`, "_blank")}
         >
           GitHub Repo
         </button>
         <button
-          className="btn"
+          className="btn project-deployed-link"
           onClick={() => window.open(`${deployed}`, "_blank")}
         >
           Live Link
