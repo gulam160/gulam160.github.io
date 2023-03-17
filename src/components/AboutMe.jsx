@@ -27,7 +27,7 @@ const AboutMe = ({ name, email, brand }) => {
   return (
     <div className="aboutContainer container">
       <div className="row">
-        <img class="home-img" src={aboutMeImg} alt={name} />
+        <img className="home-img" src={aboutMeImg} alt={name} />
         <div className="contentContainer">
           <h4>Nice to meet you</h4>
           <h5 id="user-detail-intro">

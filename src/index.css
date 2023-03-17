@@ -54,11 +54,18 @@ body {
   font-size: 36px;
   border-bottom: 3px solid var(--hl-color);
   margin-bottom: var(--spacing);
+  /* text-align: center; */
+  /* width: fit-content; */
+  /* margin: auto; */
 }
 
 .pageDescription {
   color: var(--grey);
   font-size: 14px;
+  /* text-align: center; */
+  /* width: fit-content; */
+  /* margin: auto; */
+  /* margin-top: 200px; */
 }
 
 .socialIcons .icon {

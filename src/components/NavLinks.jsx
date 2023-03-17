@@ -59,7 +59,7 @@ const NavLinks = () => {
         <Link
           to="#skills"
           smooth
-          class="nav-link skills"
+          className="nav-link skills"
           onClick={() => setIsMenuOpen(false)}
         >
           Skills

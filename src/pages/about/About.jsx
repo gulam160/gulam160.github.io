@@ -3,7 +3,7 @@ import PageHeader from "../../components/PageHeader";
 
 const About = ({ name, location, brand, email, availability }) => {
   return (
-    <section className="myAbout" id="about" class="about section">
+    <section className="myAbout about section" id="about">
       <PageHeader title="About Me" description="Let me introduce myself" />
       <AboutMe
         name={name}
