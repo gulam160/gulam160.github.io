@@ -27,6 +27,18 @@ const NavLinks = () => {
     link.click();
   };
 
+  const resumeStyles = {
+    width: "fit-content",
+    margin: "auto",
+    background: "#009e66",
+    color: "#f9f9f9",
+    marginTop: "-7px",
+    padding: "12px var(--sm-spacing)",
+    border: "none",
+    borderRadius: "20px",
+    cursor: "pointer",
+  };
+
   return (
     <>
       <button
@@ -80,15 +92,14 @@ const NavLinks = () => {
         >
           Contact
         </Link>
-        <Link
-          to="#home"
-          smooth
-          target="_blank"
-          className="nav-link resume"
-          id="resume-link-1"
-          onClick={handleDownload}
-        >
-          {downloading ? "Downloading..." : "Resume"}
+        <Link to="#home" smooth target="_blank" className="nav-link resume">
+          <button
+            id="resume-button-1"
+            onClick={handleDownload}
+            style={resumeStyles}
+          >
+            {downloading ? "Downloading..." : "Resume"}
+          </button>
         </Link>
       </nav>
     </>
