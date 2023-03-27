@@ -49,7 +49,8 @@ const Project = ({
             <em>{technologies}</em>
           </p>
           <h3 className="projectTitle project-title">{title}</h3>
-          <span className="viewWork">View Work &#8594;</span>
+          <p className="project-description">Click to View</p>
+          <span className="viewWork">&#8594;</span>
         </div>
         <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
           <img src={image} alt="Laptop displaying application" />
@@ -83,7 +84,7 @@ const Project = ({
           alt="Close"
         ></img>
         <h3 className="modalTitle project-title">{title}</h3>
-        <p className="projectDescription project-description">{description}</p>
+        <p className="projectDescription">{description}</p>
         <button
           className="btn project-github-link"
           onClick={() => window.open(`${github}`, "_blank")}
