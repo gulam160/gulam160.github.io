@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import SocialIcons from "../../components/SocialIcons";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import resume from "../about/Gulam_Mustafa_Resume.pdf";
 
 const Landing = () => {
@@ -61,25 +61,17 @@ const Landing = () => {
     triggerOnce: true,
   });
 
-  const [downloading, setDownloading] = useState(false);
-
-  useEffect(() => {
-    setDownloading(false);
-  }, [downloading]);
+  const [downloading, setIsDownloading] = useState(false);
 
   const handleDownload = () => {
-    setDownloading(true);
+    setIsDownloading(true);
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "Gulam_Mustafa_Resume.pdf";
-    window.open(`${link.href}`);
-    link.onload = () => {
-      link.remove();
-      setDownloading(false);
-    };
+    link.download = "Gulam_Mustafa_Resume";
     document.body.appendChild(link);
-    document.title = "Gulam_Mustafa_Resume.pdf";
     link.click();
+    document.body.removeChild(link);
+    setIsDownloading(false);
   };
 
   return (
@@ -119,7 +111,7 @@ const Landing = () => {
             transition={{ duration: 0.8, ease: "easeInOut" }}
             onClick={handleDownload}
           >
-            View Resume
+            {downloading ? "Downloading..." : "View Resume"}
           </motion.button>
         </div>
         <SocialIcons />

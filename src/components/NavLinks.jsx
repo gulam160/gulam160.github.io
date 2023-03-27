@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 import openMenu from "../images/open.svg";
@@ -7,24 +7,17 @@ import resume from "../pages/about/Gulam_Mustafa_Resume.pdf";
 
 const NavLinks = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [downloading, setDownloading] = useState(false);
-
-  useEffect(() => {
-    setDownloading(false);
-  }, [downloading]);
+  const [downloading, setIsDownloading] = useState(false);
 
   const handleDownload = () => {
-    setDownloading(true);
+    setIsDownloading(true);
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "Gulam_Mustafa_Resume.pdf";
-    window.open(`${link.href}`);
-    link.onload = () => {
-      link.remove();
-      setDownloading(false);
-    };
+    link.download = "Gulam_Mustafa_Resume";
     document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
+    setIsDownloading(false);
   };
 
   const resumeStyles = {

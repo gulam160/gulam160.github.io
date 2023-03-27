@@ -1,14 +1,10 @@
 import aboutMeImg from "../images/aboutme.jpeg";
 import SocialIcons from "../components/SocialIcons";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import resume from "../pages/about/Gulam_Mustafa_Resume.pdf";
 
 const AboutMe = ({ name, email, brand }) => {
   const [downloading, setDownloading] = useState(false);
-
-  useEffect(() => {
-    setDownloading(false);
-  }, [downloading]);
 
   const handleDownload = () => {
     setDownloading(true);
@@ -66,14 +62,14 @@ const AboutMe = ({ name, email, brand }) => {
             </div>
           </div>
           <div className="buttonContainer">
-            <button
+            <a
               className="btn downloadCV"
-              id="resume-button-2"
+              id="resume-link-2"
               onClick={handleDownload}
               disabled={downloading}
             >
               {downloading ? "Downloading..." : "Download Resume"}
-            </button>{" "}
+            </a>{" "}
             <SocialIcons />
           </div>
         </div>
