@@ -30,6 +30,8 @@ const Project = ({
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
 
+  const projectDescription = "Click to View";
+
   return (
     <motion.div
       ref={ref}
@@ -49,8 +51,13 @@ const Project = ({
             <em>{technologies}</em>
           </p>
           <h3 className="projectTitle project-title">{title}</h3>
-          <p className="project-description">Click to View</p>
-          <span className="viewWork">&#8594;</span>
+          <p className="project-description">{projectDescription}</p>
+          <p className="project-github-link" onClick={() => console.log("")}>
+            {""}
+          </p>
+          <p className="project-deployed-link" onClick={() => console.log("")}>
+            {""}
+          </p>
         </div>
         <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
           <img src={image} alt="Laptop displaying application" />
