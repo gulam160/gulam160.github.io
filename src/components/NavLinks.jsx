@@ -11,12 +11,10 @@ const NavLinks = () => {
 
   const handleDownload = () => {
     setIsDownloading(true);
-    const link = document.createElement("a");
-    link.href = resume;
-    link.download = "Gulam_Mustafa_Resume";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open(
+      "https://drive.google.com/file/d/18xW1OVYacOpz0g5rgT36A063f9RXIKxS/view?usp=sharing",
+      "_blank"
+    );
     setIsDownloading(false);
   };
 
@@ -85,15 +83,23 @@ const NavLinks = () => {
         >
           Contact
         </Link>
-        <Link to="#home" smooth target="_blank" className="nav-link resume">
-          <button
-            id="resume-button-1"
-            onClick={handleDownload}
-            style={resumeStyles}
+        <button
+          id="resume-button-1"
+          style={resumeStyles}
+          onClick={handleDownload}
+        >
+          <a
+            to="#home"
+            href={resume}
+            smooth
+            target="_blank"
+            className="nav-link resume"
+            id="resume-link-1"
+            download="Gulam_Mustafa_Resume"
           >
             {downloading ? "Downloading..." : "Resume"}
-          </button>
-        </Link>
+          </a>
+        </button>
       </nav>
     </>
   );

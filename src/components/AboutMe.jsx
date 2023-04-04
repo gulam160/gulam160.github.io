@@ -64,7 +64,7 @@ const AboutMe = ({ name, email, brand }) => {
           <div className="buttonContainer">
             <a
               className="btn downloadCV"
-              id="resume-link-2"
+              id="resume-link-3"
               onClick={handleDownload}
               disabled={downloading}
             >

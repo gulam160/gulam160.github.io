@@ -49,6 +49,10 @@ const Landing = () => {
       borderRadius: "20px",
       cursor: "pointer",
     },
+    resume_link_2: {
+      textDecoration: "none",
+      color: "white",
+    },
     greetings: {
       fontSize: "20px",
       fontWeight: "400",
@@ -65,12 +69,10 @@ const Landing = () => {
 
   const handleDownload = () => {
     setIsDownloading(true);
-    const link = document.createElement("a");
-    link.href = resume;
-    link.download = "Gulam_Mustafa_Resume";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open(
+      "https://drive.google.com/file/d/18xW1OVYacOpz0g5rgT36A063f9RXIKxS/view?usp=sharing",
+      "_blank"
+    );
     setIsDownloading(false);
   };
 
@@ -111,7 +113,19 @@ const Landing = () => {
             transition={{ duration: 0.8, ease: "easeInOut" }}
             onClick={handleDownload}
           >
-            {downloading ? "Downloading..." : "View Resume"}
+            <motion.a
+              href={resume}
+              id="resume-link-2"
+              download="Gulam-Mustafa-Resume"
+              style={styles.resume_link_2}
+              initial={{ y: "20vw", opacity: 0 }}
+              animate={
+                inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }
+              }
+              transition={{ duration: 0.8, ease: "easeInOut" }}
+            >
+              {downloading ? "Downloading..." : "View Resume"}
+            </motion.a>
           </motion.button>
         </div>
         <SocialIcons />
