@@ -28,6 +28,7 @@ const NavLinks = () => {
     border: "none",
     borderRadius: "20px",
     cursor: "pointer",
+    display: "flex",
   };
 
   return (
@@ -83,24 +84,23 @@ const NavLinks = () => {
         >
           Contact
         </Link>
-        <Link className="nav-link resume">
-          <button
-            id="resume-button-1"
-            style={resumeStyles}
-            onClick={handleDownload}
+        <button
+          id="resume-button-1"
+          style={resumeStyles}
+          onClick={handleDownload}
+        >
+          <a
+            to="#home"
+            href={resume}
+            smooth
+            target="_blank"
+            className="nav-link resume"
+            id="resume-link-1"
+            download="Gulam_Mustafa_Resume"
           >
-            <a
-              to="#home"
-              href={resume}
-              smooth
-              target="_blank"
-              id="resume-link-1"
-              download="Gulam_Mustafa_Resume"
-            >
-              {downloading ? "Downloading..." : "Resume"}
-            </a>
-          </button>
-        </Link>
+            {downloading ? "Downloading..." : "Resume"}
+          </a>
+        </button>
       </nav>
     </>
   );
