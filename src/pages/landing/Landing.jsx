@@ -70,7 +70,7 @@ const Landing = () => {
   const handleDownload = () => {
     setIsDownloading(true);
     window.open(
-      "https://drive.google.com/file/d/18xW1OVYacOpz0g5rgT36A063f9RXIKxS/view?usp=sharing",
+      "https://drive.google.com/file/d/1lcgAywGdx6mHlWDof0q7mLd_KLv2WioK/view?usp=sharing",
       "_blank"
     );
     setIsDownloading(false);
