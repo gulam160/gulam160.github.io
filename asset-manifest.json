@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ff5739f6.css",
-    "main.js": "/static/js/main.3d82a094.js",
+    "main.js": "/static/js/main.0941a56e.js",
     "static/media/aboutme.jpeg": "/static/media/aboutme.078aee0109064771cb33.jpeg",
     "static/media/logosvg.svg": "/static/media/logosvg.768e943728e3b5135af50bfaf771e2a7.svg",
     "static/media/Gulam_Mustafa_Resume.pdf": "/static/media/Gulam_Mustafa_Resume.2c1db45642304aa2b4bf.pdf",
@@ -11,6 +11,6 @@
   },
   "entrypoints": [
     "static/css/main.ff5739f6.css",
-    "static/js/main.3d82a094.js"
+    "static/js/main.0941a56e.js"
   ]
 }
